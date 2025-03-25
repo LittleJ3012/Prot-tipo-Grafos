@@ -3,5 +3,7 @@ do dataset, identifica a matriz e a retorna, bem como a sua dimensão (número d
 do relatório requisitado pelo docente responsável pela disciplina. 
 
 Desenvolvido por:
+
 Julia Barcellos Paiva
+
 Aluna do Curso de Ciência da Computação na Universidade Federal de Itajubá
