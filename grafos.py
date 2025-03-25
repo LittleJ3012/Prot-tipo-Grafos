@@ -38,7 +38,7 @@ def MatrizDeGrafos(inst): #O parâmetro é o nome do dataset(inst)
             
             #Salvando os resultados em um arquivo no Google Drive:
             with open(f"/content/drive/My Drive/resultado_{inst}.txt", "w") as saida_arquivo:
-                saida_arquivo.write(f"{inst} {qtd_linhas} {qtd_colunas}\n")
+                saida_arquivo.write(f"{inst} {qtd_linhas} {qtd_colunas}\n") #Salvando o nome da instância e a dimensão da matriz
             print(f"\nResultado salvo em: /content/drive/My Drive/resultado_{inst}.txt")
 
         else:
