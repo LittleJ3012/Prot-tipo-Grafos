@@ -36,6 +36,7 @@ def MatrizDeGrafos(inst): #Os parâmetros é o nome do dataset(inst)
             print(f"\nQuantidade de linhas: {qtd_linhas}")
             print(f"\nQuantidade de colunas: {qtd_colunas}")
             
+            #Salvando os resultados em um arquivo no Google Drive:
             with open(f"/content/drive/My Drive/resultado_{inst}.txt", "w") as saida_arquivo:
                 saida_arquivo.write(f"{inst} {qtd_linhas} {qtd_colunas}\n")
             print(f"\nResultado salvo em: /content/drive/My Drive/resultado_{inst}.txt")
