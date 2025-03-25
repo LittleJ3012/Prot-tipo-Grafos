@@ -45,15 +45,16 @@ def salvaResultado(inst, qtd_linhas, qtd_colunas):
                 saida_arquivo.write(f"{inst} {qtd_linhas} {qtd_colunas}\n") #Salvando o nome da instância e a dimensão da matriz
             print(f"\nResultado salvo em: resultado_{inst}.txt")
 
-
-
 #Definição da main:
 if __name__ == '__main__':
 
 #Código do input para o usuário e a chamada das funções:
    inst = input("\nDigite o nome do arquivo:")
    matriz = LendoOsDados(inst) # Chamada da função que retorna a matriz e seu tipo
-   if matriz is not None:
+
+   if matriz is not None: #Valida a matriz
         qtd_linhas, qtd_colunas = calculaDimensaoMatriz(matriz)  # Obtém as dimensões
         print(f"\nDimensões da matriz: {qtd_linhas} linhas x {qtd_colunas} colunas")  # Imprime as dimensões na tela
         salvaResultado(inst, qtd_linhas, qtd_colunas)  # Chamada da função que salva as dimensões
+ 
+
