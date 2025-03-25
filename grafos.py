@@ -8,7 +8,7 @@ drive.mount('/content/drive')
 
 #Esta função lê o arquivo.txt (passado como parâmetro pelo usuário) e armazena o conteúdo do arquivo em uma matriz do tipo numpy.
 
-def MatrizDeGrafos(inst): #Os parâmetros é o nome do dataset(inst) 
+def MatrizDeGrafos(inst): #O parâmetro é o nome do dataset(inst) 
     try:
 
         # Uso do condicional if para que o programa saiba o caminho de cada um dos três arquivos no Google Drive:
