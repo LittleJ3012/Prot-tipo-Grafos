@@ -4,7 +4,7 @@
 
 #Observação importante: Este protótipo de Software foi desenvolvido primeiro no Google Collab, e depois realocado para o repositório GitHub.
 
-import numpy as np
+import numpy as np #Importação da biblioteca Numpy, para definir o tipo da matriz 
 from google.colab import drive #Para fazer a conexão com os arquivos (ponte.txt, zachary.txt e exemplo.txt, que estão no meu Google Drive)
 
 # Montando o Google Drive
@@ -60,5 +60,3 @@ if __name__ == '__main__':
         qtd_linhas, qtd_colunas = calculaDimensaoMatriz(matriz)  # Obtém as dimensões
         print(f"\nDimensões da matriz: {qtd_linhas} linhas x {qtd_colunas} colunas")  # Imprime as dimensões na tela
         salvaResultado(inst, qtd_linhas, qtd_colunas)  # Chamada da função que salva as dimensões
- 
-
