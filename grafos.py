@@ -45,9 +45,14 @@ def calculaDimensaoMatriz(matriz):
             
   #A terceira função salva os dados sobre as linhas e as colunas em um arquivo no Google Drive:
 def salvaResultado(inst, qtd_linhas, qtd_colunas):
+    
+    #A próxima linha usa o comando open para abrir e escrever as informações no arquivo que armazena os dados das linhas
+    #e das colunas. O caminho para o arquivo é definido de forma que apenas o nome da instância será modificado a cada chamada
+    #da função, a depender do nome do arquivo (inst) que será passado como parâmetro pelo usuário:
+    
             with open(f"/content/drive/My Drive/resultado_{inst}.txt", "w") as saida_arquivo:
-                saida_arquivo.write(f"{inst} {qtd_linhas} {qtd_colunas}\n") #Salvando o nome da instância e a dimensão da matriz
-            print(f"\nResultado salvo em: resultado_{inst}.txt")
+                saida_arquivo.write(f"{inst} {qtd_linhas} {qtd_colunas}\n") #Escrevendo o nome da instância e a dimensão da matriz no arquivo
+            print(f"\nResultado salvo em: resultado_{inst}.txt") #Mensagem de confirmação
 
 #Definição da main:
 if __name__ == '__main__':
