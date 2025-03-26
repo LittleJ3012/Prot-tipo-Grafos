@@ -1,3 +1,7 @@
+#Aluna: Julia Barcellos Paiva
+#Matrícula: 2022010393
+#Curso: Ciência da Computação
+
 #Observação importante: Este protótipo de Software foi desenvolvido primeiro no Google Collab, e depois realocado para o repositório GitHub.
 
 import numpy as np
